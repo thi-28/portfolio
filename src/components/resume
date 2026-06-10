@@ -1,0 +1,128 @@
+================================================================================
+PRATHIKSHA PATIL SARALEBETTU
+================================================================================
+Washington, DC 20037
+Phone: +1 (510) 908-2848
+Email: patilprathiksha@gmail.com | patilprathiksha@gmail.com
+LinkedIn: linkedin.com/in/prathiksha-patil
+GitHub: github.com/thi-28
+================================================================================
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+MS Computer Science student at George Washington University specializing in
+Natural Language Processing and Responsible AI. Hands-on experience in LLM
+evaluation, hallucination mitigation, retrieval-augmented generation, and
+scalable AI systems using PyTorch and HuggingFace. Prior industry experience
+deploying production ML systems and data pipelines at PricewaterhouseCoopers.
+
+--------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+The George Washington University — School of Engineering & Applied Science
+  Master of Science, Computer Science
+  Washington, DC | Aug 2025 – Present
+
+Manipal Institute of Technology
+  Bachelor of Technology, Computer Science Engineering | Minor in Big Data
+  India | Graduated 2024
+
+--------------------------------------------------------------------------------
+EXPERIENCE
+--------------------------------------------------------------------------------
+PricewaterhouseCoopers                                     Aug 2024 – Jul 2025
+Deals Technology and Data Solutions Associate              Bangalore, India
+
+  - Deployed Large Language Model (LLM) solutions tailored for financial
+    document processing, reducing manual reporting effort by 30%.
+  - Engineered automated SQL validation pipelines to detect data anomalies
+    across 20+ enterprise systems, increasing financial insight accuracy by 25%
+    and boosting process efficiency by 90% via real-time error detection.
+  - Architected automated financial alerting systems using AWS Lambda and
+    Python, eliminating manual monitoring and increasing team productivity by
+    35% through real-time stakeholder notifications.
+  - Collaborated with engineers and stakeholders through design reviews and
+    iterative development cycles for production data systems.
+
+PwC                                                        Feb 2024 – Aug 2024
+Deals Technology and Data Solutions Intern                 Bangalore, India
+
+  - Streamlined data engineering workflows by Dockerizing analytical workloads
+    on AWS, reducing end-to-end processing time by 25% and improving
+    deployment scalability.
+  - Designed 5+ interactive Power BI dashboards, enhancing real-time visibility
+    for executives and increasing stakeholder engagement by 40%.
+
+Personifwy                                                 Jun 2023 – Jul 2023
+Generative AI Intern                                       Bangalore, India
+
+  - Engineered an NLP system leveraging OpenAI GPT-3.5 LLMs to automate job
+    description generation and perform semantic resume-job matching, increasing
+    recruitment workflow efficiency by 40%.
+  - Optimized backend performance by migrating to FastAPI, reducing API
+    response latency by 15% for high-concurrency recruitment workflows.
+  - Developed a domain-aware matching engine using OpenAI LLMs to process
+    scraped resume data, resulting in a 32% improvement in job-to-candidate
+    relevance accuracy.
+
+--------------------------------------------------------------------------------
+PROJECTS
+--------------------------------------------------------------------------------
+Enterprise Knowledge AI Agent (RAG System)
+
+  - Built a retrieval-augmented generation (RAG) system using HuggingFace,
+    LangChain, and vector embeddings to answer questions over enterprise-style
+    document collections.
+  - Designed grounding and citation mechanisms to reduce hallucinations in LLM
+    responses; implemented evaluation tests to measure factual consistency and
+    retrieval accuracy.
+
+Transformer-Based Text Understanding Model
+
+  - Fine-tuned BERT-based transformer models for text classification on
+    real-world datasets including customer issues, support tickets, and reviews.
+  - Conducted error analysis and confusion-matrix evaluation to identify failure
+    modes and bias; improved robustness via data augmentation and
+    hyperparameter tuning.
+
+LLM Hallucination & Trustworthiness Study
+
+  - Reproduced and extended prior NLP research on hallucination detection in
+    large language models.
+  - Designed controlled experiments comparing baseline LLMs and
+    retrieval-augmented generation systems.
+  - Evaluated factual accuracy, hallucination rate, uncertainty, and bias using
+    automatic evaluation metrics; analyzed failure modes for enterprise
+    deployment of trustworthy AI systems.
+
+LLM-Powered Knowledge & Search System
+
+  - Built an LLM-powered search and question-answering system using PyTorch,
+    HuggingFace, and vector embeddings over large document collections.
+  - Designed retrieval and ranking logic to improve response relevance;
+    implemented automated evaluation for accuracy and latency.
+
+--------------------------------------------------------------------------------
+TECHNICAL SKILLS
+--------------------------------------------------------------------------------
+Programming & APIs    : Python, C, SQL, MongoDB, FastAPI, REST API
+AI & ML               : LLMs, Transformers, BERT, CNNs, RNN, NLP, LSTMs,
+                        Attention Models
+ML Frameworks         : PyTorch, HuggingFace Transformers, LangChain, LlamaIndex
+Data & Platforms      : Databricks, Apache Spark, Delta Lake, MS SQL Server,
+                        Hadoop, Alteryx
+MLOps & Tools         : AWS Lambda, Docker, Git, NumPy, Pandas, Power BI
+Research & Analysis   : Experiment Design, Error Analysis, Bias & Hallucination
+                        Evaluation, Dataset Curation, Model Benchmarking
+
+--------------------------------------------------------------------------------
+RESEARCH INTERESTS
+--------------------------------------------------------------------------------
+Natural Language Processing | Responsible & Trustworthy AI
+Automatic Evaluation of LLMs | Retrieval-Augmented Generation
+AI Agents | Personalization Systems | LLM-powered Recommendation Features
+
+================================================================================
+END OF RESUME
+================================================================================

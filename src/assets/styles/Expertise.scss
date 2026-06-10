@@ -5,7 +5,7 @@
     text-align: left;
 
     svg {
-        color: white;
+        color: var(--text-primary);
     }
 }
   
@@ -21,14 +21,14 @@
 }
   
 .chip {
-    color: rgb(39, 40, 34) !important;
-    background-color: white !important;
+    color: var(--text-primary) !important;
+    background-color: var(--surface) !important;
     font-size: 0.8rem !important;
     height: 25px !important;
   
     span {
         font-family: 'Courier Prime', monospace;
-        color: rgb(39, 40, 34);
+        color: var(--text-primary);
     }
   
     svg {
@@ -41,7 +41,7 @@
     margin: 0.5;
 
     .chip-title {
-        color: white;
+        color: var(--text-primary);
         padding-right: 10px;
     }
 }
@@ -51,13 +51,13 @@
 }
 
 .flex-chips .MuiChip-outlined {
-    background-color: #e0e0e0;
+    background-color: var(--border);
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
 
 .flex-chips .MuiChip-outlined span {
-    color: rgb(39, 40, 34);
+    color: var(--text-primary);
 }
 
 @media screen {

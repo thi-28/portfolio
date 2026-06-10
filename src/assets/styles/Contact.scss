@@ -9,23 +9,33 @@
 
   button {
     float: right;
-    background-color: white;
-    color: #050f0b;
-  }
+    background-color: var(--accent);
+    color: var(--icon-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-  button:hover {
-    background-color: #5000ca;
-    color: white;
+    &:hover {
+      background-color: var(--accent-hover);
+    }
   }
 
   fieldset {
-    background-color: white;
+    background-color: var(--surface);
+    border-color: var(--border);
   }
 }
 
 label {
   font-size: 1.2rem;
   font-family: 'DomaineDispNar-Medium', sans-serif;
+  color: var(--text-primary) !important;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
 }
 
 .form-flex {
@@ -45,4 +55,85 @@ form {
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
+}
+
+/* Ensure input fields are visible and readable */
+.MuiTextField-root {
+  width: 100%;
+
+  .MuiOutlinedInput-root {
+    color: var(--text-primary);
+    background-color: var(--input-bg);
+    
+    fieldset {
+      border-color: var(--border);
+    }
+
+    &:hover fieldset {
+      border-color: var(--text-secondary);
+    }
+
+    &.Mui-focused fieldset {
+      border-color: var(--accent);
+    }
+  }
+
+  .MuiOutlinedInput-input {
+    color: var(--text-primary);
+    background-color: var(--input-bg);
+
+    &::placeholder {
+      color: var(--text-muted);
+      opacity: 0.7;
+    }
+  }
+
+  .MuiInputBase-input {
+    color: var(--text-primary);
+    background-color: var(--input-bg);
+
+    &::placeholder {
+      color: var(--text-muted);
+      opacity: 0.7;
+    }
+  }
+}
+
+.MuiFormLabel-root {
+  color: var(--text-primary) !important;
+  font-weight: 500;
+
+  &.Mui-focused {
+    color: var(--accent) !important;
+  }
+
+  &.Mui-error {
+    color: #f44336 !important;
+  }
+}
+
+.MuiFormHelperText-root {
+  color: var(--text-secondary) !important;
+
+  &.Mui-error {
+    color: #f44336 !important;
+  }
+}
+
+/* Button styling */
+.MuiButton-contained {
+  background-color: var(--accent) !important;
+  color: var(--icon-color) !important;
+
+  &:hover {
+    background-color: var(--accent-hover) !important;
+  }
+}
+
+.MuiButton-text {
+  color: var(--accent) !important;
+
+  &:hover {
+    background-color: rgba(58, 88, 128, 0.08);
+  }
 }

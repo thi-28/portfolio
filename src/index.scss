@@ -1,3 +1,35 @@
+/* LIGHT MODE - DEFAULT */
+:root {
+  --bg: #F3F9F7;
+  --surface: #ffffff;
+  --border: #B8E0D4;
+  --accent: #6BBFAA;
+  --accent-hover: #4DA897;
+  --text-primary: #1C2B24;
+  --text-secondary: #4A6B60;
+  --text-muted: #7AA898;
+  --nav-border: #B8E0D4;
+  --icon-bg: #6BBFAA;
+  --icon-color: #0D3D30;
+  --input-bg: #ffffff;
+}
+
+/* DARK MODE */
+.dark-mode {
+  --bg: #0F1F1A;
+  --surface: #162B23;
+  --border: #2A4A3E;
+  --accent: #7DD4BC;
+  --accent-hover: #A8E8D8;
+  --text-primary: #E8F5F0;
+  --text-secondary: #9BB8B0;
+  --text-muted: #6B9B8E;
+  --nav-border: #1F3830;
+  --icon-bg: #7DD4BC;
+  --icon-color: #0D3D30;
+  --input-bg: transparent;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -15,8 +47,7 @@ code {
 
 .main-container {
   position: relative;
-  background-color: #0d1116;
-
+  background-color: var(--bg);
 }
 
 a {
@@ -24,18 +55,18 @@ a {
 }
 
 a:hover {
-  color: #5000ca;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  color: var(--accent);
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 p, a, h1, h2, h3, h4, h5, label, button {
-  color: white;
+  color: var(--text-primary);
   font-family: "Lato", sans-serif;
 }
 
 .navigation-bar {
   justify-content: space-between;
-  background-color: #0d1116;
+  background-color: var(--bg);
 
   button {
     font-size: 1.1rem;
@@ -51,7 +82,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
 .navigation-bar-responsive {
   span, p {
-    color: #0d1116;
+    color: var(--text-primary);
     font-family: "Lato", sans-serif;
   }
 }
@@ -93,23 +124,23 @@ p, a, h1, h2, h3, h4, h5, label, button {
 }
 
 .light-mode {
-  background-color: #f8f9fa;
+  background-color: var(--bg);
 
   .navigation-bar {
-    background-color: #f8f9fa;
+    background-color: var(--bg);
   }
 
   p, a, h1, h2, h3, h4, h5, label, button {
-    color: #0d1116;
+    color: var(--text-primary);
   }
 
   a:hover {
-    color: #5000ca;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: var(--accent);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
   }
 
   .navigation-bar svg {
-    color: #0d1116;
+    color: var(--text-primary);
   }
 
   .about-section {
@@ -117,32 +148,51 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 
   .skills-container svg {
-    color: #0d1116;
+    color: var(--accent);
   }
 
   .chip {
-    background-color: rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    background-color: #EAF7F3;
+    color: #1C2B24;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.1),
+                0px 2px 2px 0px rgba(0, 0, 0, 0.07),
+                0px 1px 5px 0px rgba(0, 0, 0, 0.06);
   }
 
   .vertical-timeline::before {
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: var(--border);
   }
 
   .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.1),
+                0px 2px 2px 0px rgba(0, 0, 0, 0.07),
+                0px 1px 5px 0px rgba(0, 0, 0, 0.06);
   }
 
   .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-    color: gray;
+    color: var(--text-muted);
   }
 
   .vertical-timeline-element-content-arrow {
-    border-right: 7px solid rgba(0, 0, 0, 0.08) !important;
+    border-right: 7px solid var(--border) !important;
   }
 
   .flex-chips .chip-title {
-    color: #0d1116;
+    color: var(--text-primary);
+  }
+}
+
+.dark-mode {
+  .chip {
+    background-color: #1A3D30;
+    color: #7DD4BC;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.3),
+                0px 2px 2px 0px rgba(0, 0, 0, 0.2),
+                0px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .skills-container svg {
+    color: var(--accent);
   }
 }
 
@@ -152,4 +202,36 @@ p, a, h1, h2, h3, h4, h5, label, button {
       padding: 5% 5%;
     }
   }
+}
+
+/* MUI Component Theme Overrides */
+.MuiAppBar-root {
+  background-color: var(--bg) !important;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.MuiButton-text {
+  color: var(--text-primary) !important;
+
+  &:hover {
+    background-color: rgba(107, 191, 170, 0.08);
+  }
+}
+
+.MuiDrawer-paper {
+  background-color: var(--surface) !important;
+  color: var(--text-primary) !important;
+}
+
+.MuiListItemButton-root {
+  color: var(--text-primary) !important;
+
+  &:hover {
+    background-color: var(--border);
+  }
+}
+
+.MuiIconButton-root {
+  color: var(--text-primary) !important;
 }

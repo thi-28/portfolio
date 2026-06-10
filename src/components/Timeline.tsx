@@ -7,6 +7,28 @@ import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
 function Timeline() {
+  // Get computed styles based on Theme
+  const getThemeColors = () => {
+    const root = document.documentElement;
+    const isDarkMode = document.querySelector('.main-container')?.classList.contains('dark-mode');
+    
+    if (isDarkMode) {
+      return {
+        surface: '#162030',
+        text: '#dce8f4',
+        accent: '#7090b8',
+      };
+    } else {
+      return {
+        surface: '#ffffff',
+        text: '#1e3058',
+        accent: '#3a5880',
+      };
+    }
+  };
+
+  const colors = getThemeColors();
+
   return (
     <div id="history">
       <div className="items-container">
@@ -14,52 +36,44 @@ function Timeline() {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: colors.surface, color: colors.text }}
+            contentArrowStyle={{ borderRight: `7px solid ${colors.surface}` }}
+            date="Aug 2024 - Jul 2025"
+            iconStyle={{ background: colors.accent, color: colors.text }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Deals Technology and Data Solutions Associate</h3>
+            <h4 className="vertical-timeline-element-subtitle">PricewaterhouseCoopers, Bangalore, India</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Deployed LLM solutions for financial document processing; Engineered SQL validation pipelines; Architected automated financial alerting systems using AWS Lambda
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: colors.surface, color: colors.text }}
+            contentArrowStyle={{ borderRight: `7px solid ${colors.surface}` }}
+            date="Feb 2024 - Aug 2024"
+            iconStyle={{ background: colors.accent, color: colors.text }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Deals Technology and Data Solutions Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">PricewaterhouseCoopers, Bangalore, India</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Streamlined data workflows with Docker on AWS; Designed 5+ Power BI dashboards for executive reporting
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: colors.surface, color: colors.text }}
+            contentArrowStyle={{ borderRight: `7px solid ${colors.surface}` }}
+            date="Jun 2023 - Jul 2023"
+            iconStyle={{ background: colors.accent, color: colors.text }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Generative AI Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Personifwy, Bangalore, India</h4>
             <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
+              Engineered NLP system with GPT-3.5 for job description generation; Optimized FastAPI performance; Developed semantic resume-job matching engine
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

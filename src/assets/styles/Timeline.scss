@@ -1,38 +1,138 @@
-.vertical-timeline span {
-    color: white;
-    font-family: 'Courier Prime', monospace;
-}
+/* ===== LIGHT MODE TIMELINE ===== */
+:root {
+  .vertical-timeline::before {
+    background-color: #B8E0D4 !important;
+  }
 
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element span {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
-}
-
-.svg-inline--fa {
-    color: white;
-}
-
-@media screen and (max-width: 1170px) {
-    .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
+  .vertical-timeline-element {
+    .vertical-timeline-element-content {
+      background-color: #ffffff !important;
+      border: 1.5px solid #B8E0D4 !important;
+      color: #4A6B60 !important;
     }
+
+    .vertical-timeline-element-content-arrow {
+      border-right: 7px solid #ffffff !important;
+    }
+
+    .vertical-timeline-element-icon {
+      background-color: #6BBFAA !important;
+      svg {
+        color: #0D3D30 !important;
+      }
+    }
+
+    h3 {
+      color: #1C2B24 !important;
+    }
+
+    h4 {
+      color: #6BBFAA !important;
+    }
+
+    p {
+      color: #4A6B60 !important;
+    }
+
+    .vertical-timeline-element-date {
+      color: #4A6B60 !important;
+    }
+
+    span {
+      color: #6BBFAA !important;
+    }
+  }
+
+  /* Education entries — blossom pink icon */
+  .vertical-timeline-element--education {
+    .vertical-timeline-element-icon {
+      background-color: #E8A0AD !important;
+      svg {
+        color: #5C2030 !important;
+      }
+    }
+
+    h4 {
+      color: #E8A0AD !important;
+    }
+  }
+
+  .svg-inline--fa {
+    color: #6BBFAA !important;
+  }
+}
+
+/* ===== DARK MODE TIMELINE ===== */
+.dark-mode {
+  .vertical-timeline::before {
+    background-color: #2A4A3E !important;
+  }
+
+  .vertical-timeline-element {
+    .vertical-timeline-element-content {
+      background-color: #162B23 !important;
+      border: 1.5px solid #2A4A3E !important;
+      color: #9BB8B0 !important;
+    }
+
+    .vertical-timeline-element-content-arrow {
+      border-right: 7px solid #162B23 !important;
+    }
+
+    .vertical-timeline-element-icon {
+      background-color: #7DD4BC !important;
+      svg {
+        color: #0D3D30 !important;
+      }
+    }
+
+    h3 {
+      color: #E8F5F0 !important;
+    }
+
+    h4 {
+      color: #7DD4BC !important;
+    }
+
+    p {
+      color: #9BB8B0 !important;
+    }
+
+    .vertical-timeline-element-date {
+      color: #9BB8B0 !important;
+    }
+
+    span {
+      color: #7DD4BC !important;
+    }
+  }
+
+  /* Education entries — blossom pink icon dark mode */
+  .vertical-timeline-element--education {
+    .vertical-timeline-element-icon {
+      background-color: #D4899A !important;
+      svg {
+        color: #3D0F1A !important;
+      }
+    }
+
+    h4 {
+      color: #D4899A !important;
+    }
+  }
+
+  .svg-inline--fa {
+    color: #7DD4BC !important;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 1170px) {
+  :root .vertical-timeline-element .vertical-timeline-element-date {
+    color: #4A6B60 !important;
+  }
+
+  .dark-mode .vertical-timeline-element .vertical-timeline-element-date {
+    color: #9BB8B0 !important;
+  }
 }
